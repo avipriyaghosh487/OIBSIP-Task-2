@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Avipriya Ghosh</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Avipriya Ghosh</h1>
+            <nav>
+                <ul>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="/images/dp.jpg" alt="Avipriya Ghosh">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I am Avipriya Ghosh, a Computer Science Engineering senior studying at Heritage Institute of Technology, Kolkata. With a passion for web development and problem solving. I enjoy creating innovative solutions to complex problems.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>You can also view my resume <a href="resume.pdf" target="_blank">here</a> or download it <a id="resume-link" href="resume.pdf" download>here</a>.</p>
+            <iframe src="resume.pdf" width="600px" height="600px"></iframe>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><i class="fab fa-python"></i> DSA</li>
+                <li><i class="fab fa-js-square"></i> JavaScript</li>
+                <li><i class="fab fa-html5"></i> HTML & CSS</li>
+                <li><i class="fab fa-react"></i> React</li>
+                <li><i class="fab fa-node-js"></i> Node.js</li>
+                <li><i class="fas fa-database"></i> Databases</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <img src="/images/proj1.png" alt="Project One Screenshot">
+                    <h3>React Notes App</h3>
+                    <p>It's a web app built with React.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <a href="https://github.com/avipriyaghosh487/React-Notes" target="_blank">GitHub</a>
+                    <a href="https://phenomenal-crisp-2c8223.netlify.app/" target="_blank">Live Demo</a>
+                </div>
+                <div class="project">
+                    <img src="/images/proj2.png" alt="Project Two Screenshot">
+                    <h3>Weather App</h3>
+                    <p>A simple weather app made using JavaScript using the OpenWeatherAPI.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <a href="https://github.com/avipriyaghosh487/WeatherJS" target="_blank">GitHub</a>
+                    <a href="https://iridescent-khapse-3e44cc.netlify.app" target="_blank">Live Demo</a>
+                </div>
+                <div class="project">
+                    <img src="/images/proj3.png" alt="Project Three Screenshot">
+                    <h3>Movie App</h3>
+                    <p>A simple movie app made using javascript.</p>
+                    <div class="tech-icons">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <a href="https://github.com/avipriyaghosh487/CineFlix" target="_blank">GitHub</a>
+                    <a href="https://master--chimerical-kelpie-95ea1e.netlify.app/" target="_blank">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Avipriya Ghosh. All rights reserved.</p>
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:aceghosh487@gmail.com">aceghosh487@gmail.com</a></p>
+                <p>Phone: <span id="phone-no">+91 7044127449</span></p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/avipriyaghosh487" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/avipriya-ghosh-85b955215/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
